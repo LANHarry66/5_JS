@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getSum(x = 0, y = 0) {
+            let sum = 0
+            for (let i = x; i <= y; i++) {
+                sum += i
+            }
+            document.write(sum)
+        }
+        let m = +prompt('请输入起始值')
+        let n = +prompt('请输入结束值')
+        getSum(m, n)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let ans = Math.floor(Math.random() * 10) + 1;
+        console.log(ans);
+        let guess = +prompt('请猜数字:');
+        let flag = 1;
+       
+        while (flag) {
+            if (guess > ans) {
+                alert('猜大了');
+                guess = +prompt('请猜数字:');
+                continue;
+            } else if (guess < ans) {
+                alert('猜小了');
+                guess = +prompt('请猜数字:');
+                continue;
+            }
+            else {
+                alert('猜对了');
+                break;
+            }
+            alert('游戏结束');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .tb{
+            height: 40px;
+            font-size: 20px;
+            border-spacing: 0;
+            border: 1px black solid;
+            border-collapse: collapse;
+            table-layout: fixed;
+            margin: 0 auto;
+            
+        }
+        th,td{
+            height: 40px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        caption{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        let name = prompt('请输入商品名称')
+        let price = +prompt('请输入价格')
+        let num = +prompt('请输入数量')
+        let address = prompt('请输入地址')
+        let total = price * num
+        document.write(`
+            <table class="tb">
+            <caption>订单确认</caption>
+            <thead>
+                <tr>
+                    <th>商品名称</th>
+                    <th>商品价格</th>
+                    <th>商品数量</th>
+                    <th>总价</th>
+                    <th>收货地址</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>${name}</td>
+                    <td>${price}元</td>
+                    <td>${num}</td>
+                    <td>${total}元</td>
+                    <td>${address}</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+        `)
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 函数表达式，可以不用命名函数名
+        let fn = function (x,y){
+            console.log(x+y);
+        }
+        // 调用
+        fn(1,2)
+        
+        // 函数表达式和具名函数不同：
+        // 可以在申明函数的任何地方调用具名函数
+        f1()
+        function f1(){
+            console.log(1);
+        }
+        f1()
+        
+        // 不可以在申明的函数表达式前面调用函数
+        f2()
+        let f2 = function (){
+            console.log(2);
+        }
+        f2()
+    </script>
+</body>
+</html>

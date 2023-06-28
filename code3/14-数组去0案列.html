@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [2,0,6,1,77,0,52,0,25,7]
+        let b = []
+        for(let i = 0;i<a.length;i++){
+            if(a[i]===0){
+                continue
+            }
+            b.push(a[i])
+        }
+        console.log(b);
+    </script>
+</body>
+</html>

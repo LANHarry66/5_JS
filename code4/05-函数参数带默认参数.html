@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 默认参数，当函数没传参数时，调用默认参数
+        function getSum(x=0,y=0){
+            document.write(x+y)
+        }
+        getSum()// 0
+        getSum(1,2)//3
+    </script>
+</body>
+</html>

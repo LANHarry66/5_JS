@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = []
+        let n = 1
+        while (n) {
+            n = +prompt('请输入分数')
+            if (n !== 0) {
+                a.push(n)
+            }
+        }
+        console.log(a);
+        function getSum(a) {
+            let sum = 0
+            for (let i = 0; i < a.length; i++) {
+                sum += a[i]
+            }
+            document.write(`总分数为${sum}`)
+        }
+        getSum(a)
+    </script>
+</body>
+
+</html>

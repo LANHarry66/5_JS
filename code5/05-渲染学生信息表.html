@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table {
+            width: 600px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        tr {
+            height: 40px;
+            cursor: pointer;
+        }
+
+        table tr:nth-child(1) {
+            background-color: #ddd;
+        }
+
+        table tr:not(:first-child):hover {
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>学生信息</h2>
+    <p>将数据渲染到页面中...</p>
+
+    <table>
+        <caption>学生列表</caption>
+        <tr>
+            <th>序号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+            <th>家乡</th>
+        </tr>
+        <script>
+            let stu = [
+                { Sname: '小明', Sage: 17, Sgender: 'M', Shome: '北京市' },
+                { Sname: '小红', Sage: 16, Sgender: 'M', Shome: '上海市' },
+                { Sname: '小王', Sage: 18, Sgender: 'F', Shome: '天津市' },
+                { Sname: '小李', Sage: 19, Sgender: 'F', Shome: '重庆市' }
+            ];
+            for (let i = 0; i < stu.length; i++) {
+                document.write(`
+                <tr>
+                    <th>${i+1}</th>
+                    <th>${stu[i]['Sname']}</th>
+                    <th>${stu[i]['Sage']}</th>
+                    <th>${stu[i]['Sgender']}</th>
+                    <th>${stu[i]['Shome']}</th>
+                </tr>
+                    `);
+            }
+        </script>
+    </table>
+
+</body>
+
+</html>

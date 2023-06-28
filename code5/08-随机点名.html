@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = ['赵云', '曹操', '黄忠', '关羽', '张飞', '马超', '刘备'];
+
+        let random = Math.floor(Math.random() * 7);
+        document.write(a[random]);
+        a.splice(random, 1);
+
+        console.log(a);
+
+    </script>
+</body>
+
+</html>

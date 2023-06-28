@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = [2, 6, 1, 77, , 52, 25, 7]
+        let max = a[0]
+        let min = a[0]
+        for (let i = 1; i < a.length; i++) {
+            if (a[i] > max) {
+                max = a[i]
+            }
+            if (a[i] < min) {
+                min = a[i]
+            }
+        }
+        document.write(`max=${max}`)
+        document.write(`min=${min}`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for in 最好仅用于遍历 对象，对象是属性书无序的
+        // let a = ['a', 'b', 'c']
+        // for (let i in a) {
+        //     console.log(i);
+        //     console.log(typeof i);//string
+        //     console.log(a[i]);
+        // }
+
+        let obj = {
+            uname: 'LHR',
+            age: 23,
+            gender: 'M'
+        };
+        for (let key in obj) {
+            console.log(obj[key]);
+        }
+    </script>
+</body>
+
+</html>

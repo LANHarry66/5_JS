@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function getMax(x, y) {
+        //     return x > y ? x : y
+        // }
+        // let Max = getMax(1,3)
+        // console.log(Max);
+
+        // let a = [1, 3, 2, 5, 88, 323, 57, -1]
+        // function getMax(arr = []) {
+        //     let max = a[0]
+        //     for (let i = 1; i < a.length; i++) {
+        //         if (max < a[i]) {
+        //             max = a[i]
+        //         }
+        //     }
+        //     return max
+        // }
+        // console.log(getMax(a));
+
+        // let a = [1, 3, 2, 5, 88, 323, 57, -1]
+        // function getMin(arr = []) {
+        //     let min = a[0]
+        //     for (let i = 1; i < a.length; i++) {
+        //         if (min > a[i]) {
+        //             min = a[i]
+        //         }
+        //     }
+        //     return min
+        // }
+        // console.log(getMin(a));
+
+        let a = [1, 3, 2, 5, 88, 323, 57, -1]
+        function getMax(arr = []) {
+            let max = a[0]
+            let min = a[0]
+            for (let i = 1; i < a.length; i++) {
+                if (max < a[i]) {
+                    max = a[i]
+                }
+                if (min > a[i]) {
+                    min = a[i]
+                }
+
+            }
+            return [max, min]
+        }
+        console.log(getMax(a));
+    </script>
+</body>
+
+</html>

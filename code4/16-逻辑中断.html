@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function f1(x, y) {
+            x = x || 0
+            y = y || 0//等价于默认参数
+            console.log(x + y);
+        }
+        f1(1, 2)
+
+        // 当满足一定条件，让右边代码不执行
+        // &&左边为false，右边被短路不执行
+        // ||左边为true，右边被短路不执行
+        let age = 1
+        console.log(false && age++);
+        console.log(age);
+
+        let age2 = 1
+        console.log(true || age2++);
+        console.log(age2);
+    </script>
+</body>
+
+</html>

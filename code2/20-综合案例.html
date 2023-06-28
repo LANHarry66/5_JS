@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let sum = 0
+        while (true) {
+            let num = +prompt(`
+            请输入您的选择：
+                    1.存钱
+                    2.取钱
+                    3.查看余额
+                    4.退出
+            `)
+            if (num === 4) {
+                document.write('已退出')
+                break
+            } else if (num === 1) {
+                let save = +prompt('请输入存款金额:')
+                sum += save
+            } else if (num === 2) {
+                let shop = +prompt('请输入取款金额:')
+                sum -= shop
+            } else if (num === 3) {
+                alert(`余额为${sum}元`)
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        span {
+            width: 100px;
+            display: inline-block;
+            margin: 2px;
+            border: 1px skyblue solid;
+            box-shadow: 2px 2px 10px 2px skyblue
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // 申明函数
+        function sheet99(){
+            for (let i = 1; i <= 9; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write(`<span>${i} X ${j} = ${i * j}</span>`)
+            }
+            document.write('<br>')
+        }
+        }
+        // 调用函数
+        sheet99()
+        sheet99()
+    </script>
+</body>
+
+</html>

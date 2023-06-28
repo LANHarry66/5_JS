@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num1 = +prompt('请输入num1')
+        let num2 = +prompt('请输入num2')
+        let symble = prompt('请输入符号')
+        switch (symble) {
+            case '+':
+                alert(num1 + num2)
+                break
+            case '-':
+                alert(num1 - num2)
+                break
+            case '*':
+                alert(num1 * num2)
+                break
+            case '/':
+                alert(num1 / num2)
+                break
+            default:
+                alert('输入符号有误')
+        }
+    </script>
+</body>
+</html>

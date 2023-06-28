@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 两个相同函数，后面函数会覆盖前面函数
+
+        function f1(){
+            console.log(1);
+        }
+        function f1(){
+            console.log(2);
+        }
+
+        // 参数不匹配
+        function f2(a,b){
+            console.log(a+b);
+        }
+        f2(1,2,3)//3没有形参接收，不参与运算
+        f2(1)//少一个实参
+    </script>
+</body>
+</html>

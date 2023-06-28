@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 注意，如果函数内部，变量没有申明，直接赋值，也当全局变量。不建议这样
+        function f1() {
+            num = 10
+        }
+        f1()
+        console.log(num);
+        // 函数内部形参，可以看做局部变量
+        function f2(x){
+            console.log(x);
+        }
+        f2(2)
+
+        
+    </script>
+</body>
+
+</html>

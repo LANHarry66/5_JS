@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let test = {
+        //     uname: 'LHR',
+        //     age: 23,
+        //     gender: 'M'
+        // }
+        // console.log(test);
+
+        let obj = {
+            name: '小米',
+            num: 10,
+            weight: '0.5kg',
+            add: 'CHN',
+            'tes':'test'
+        }
+        // 查
+        console.log(obj.add);
+            // 如果有属性名带有引号，那么查询格式：对象名['属性名'],这个方法常用
+        console.log(obj['tes']);
+        console.log(obj['add']);
+        // 改
+        obj.weight = '0.1kg'
+        console.log(obj.weight);
+        // 增
+        obj.price = 9999
+        console.log(obj);
+        // 删
+        delete obj.num
+        console.log(obj);
+    </script>
+</body>
+
+</html>

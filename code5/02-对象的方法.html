@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let obj = {
+            uname: 'lhr',
+            song: function () {
+                console.log('会唱歌');
+            }
+        };
+        // 对象方法调用，对象名.方法名
+        obj.song();
+        // 增加方法
+        obj.move = function () {
+            console.log('会走路');
+        };
+        console.log(obj);
+    </script>
+</body>
+
+</html>

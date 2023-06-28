@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = '123'
+        console.log(typeof str);
+        console.log(typeof Number(str));
+
+        let num = Number(prompt('请输入数字:'))
+        console.log(num);
+        console.log(typeof num);
+        // 
+        let num2 = +prompt('请输入数字:')
+        console.log(num2);
+        console.log(typeof num2);
+
+
+        console.log(typeof parseInt('123'));
+        // parseInt 转换为整数,向下取整,可以去掉px
+        console.log(parseInt('12.3px'));//12.3
+        // parseFloat 转换为浮点数，可以去掉px
+        console.log(parseFloat('12.89px'));//12.89
+    </script>
+</body>
+</html>
